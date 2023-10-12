@@ -16,6 +16,7 @@ function App() {
   const [country, setCountry] = useState({});
   const [question, setQuestion] = useState("");
   const [choices, setChoices] = useState([]);
+  const [tryAgain, setTryAgain] = useState(false);
 
   axios.defaults.baseURL = "https://restcountries.com/v3.1";
 
@@ -31,6 +32,21 @@ function App() {
       setChoices(getChoices(res.data, randomCountry));
     });
   }, []);
+
+  useEffect(() => {
+    if (tryAgain) {
+      setScore(0);
+      setFinished(false);
+      setWrongAnswer(false);
+      setNextBtn(false);
+      const randomCountry =
+        countries[Math.floor(Math.random() * countries.length)];
+      setCountry(randomCountry);
+      setQuestion(getQuestion(randomCountry));
+      setChoices(getChoices(countries, randomCountry));
+      setTryAgain(false);
+    }
+  }, [tryAgain]);
 
   const getSelectedChoice = (choice) => {
     if (choice.name.common === country.name.common) {
@@ -67,7 +83,7 @@ function App() {
               />
             </>
           ) : (
-            <Result score={score} />
+            <Result score={score} setTryAgain={setTryAgain} />
           )}
           {nextBtn && (
             <div className="text-end">
