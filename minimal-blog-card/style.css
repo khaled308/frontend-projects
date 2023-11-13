@@ -1,0 +1,77 @@
+:root {
+  --883AE1: #883ae1;
+  --E5EAF0: #e5eaf0;
+  --6C727F: #6c727f;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Sora", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  max-width: 40rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+}
+
+.card__header {
+  margin-bottom: 1rem;
+}
+
+.badge span {
+  border-radius: 4rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--883AE1);
+  background-color: var(--E5EAF0);
+}
+
+.card__body h2 {
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.card__body p {
+  color: var(--6C727F);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.card__body::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.1rem;
+  margin: 2rem 0;
+  background-color: var(--E5EAF0);
+}
+
+.card__footer p {
+  color: var(--6C727F);
+}
