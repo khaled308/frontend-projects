@@ -1,10 +1,13 @@
-# HTML & CSS & JS Projects
+# HTML & CSS Projects
 
-| #   | Code                                                                                    | Preview                                                                         |
-| --- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| 1   | [Code](https://github.com/khaled308/frontend-projects/tree/main/01)                     | [Preview](https://statuesque-platypus-d74e22.netlify.app/)                      |
-| 2   | [Not Found](https://github.com/khaled308/frontend-projects/tree/main/not-found)         | [Preview](https://cool-paprenjak-16c8c1.netlify.app/)                           |
-| 3   | [Blog Card](https://github.com/khaled308/frontend-projects/tree/main/minimal-blog-card) | [Preview](https://6551e79732c38232fc709708--cerulean-liger-7888af.netlify.app/) |
+| #   | Code                                                                                          | Preview                                                                         |
+| --- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| 1   | [Code](https://github.com/khaled308/frontend-projects/tree/main/01)                           | [Preview](https://statuesque-platypus-d74e22.netlify.app/)                      |
+| 2   | [Not Found](https://github.com/khaled308/frontend-projects/tree/main/not-found)               | [Preview](https://cool-paprenjak-16c8c1.netlify.app/)                           |
+| 3   | [Blog Card](https://github.com/khaled308/frontend-projects/tree/main/minimal-blog-card)       | [Preview](https://6551e79732c38232fc709708--cerulean-liger-7888af.netlify.app/) |
+| 4   | [Testimonial Page](https://github.com/khaled308/frontend-projects/tree/main/testimonial-page) | [Preview](https://testimonial-khaled308.netlify.app/)                           |
+
+# JavaScript Projects
 
 # React JS Projects
 

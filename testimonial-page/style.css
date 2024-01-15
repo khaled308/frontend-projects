@@ -1,0 +1,118 @@
+:root {
+  --FAFAF9: #fafaf9;
+  --FFFFFF: #ffffff;
+  --D4D4D8: #d4d4d8;
+  --52525A: #52525a;
+  --18181B: #18181b;
+  --4CA154: #4ca154;
+  --F5C044: #f5c044;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container section {
+  width: 100%;
+  padding: 2rem;
+  max-width: 500px;
+}
+
+.container section.info .icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--F5C044);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.container .info p {
+  color: var(--52525A);
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+.container .info li {
+  color: var(--52525A);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.reviews .card {
+  background-color: var(--FFFFFF);
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.reviews .card:first-child {
+  transform: translateX(20%);
+}
+
+.reviews .card .header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+.reviews .card .header > img {
+  width: 20%;
+  max-width: 100px;
+}
+
+.reviews .card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.reviews .card p {
+  color: var(--52525A);
+  font-size: 1.3rem;
+  line-height: 2.4rem;
+  margin-bottom: 2rem;
+}
