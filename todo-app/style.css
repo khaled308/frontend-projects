@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.tabs ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabs ul li {
+  cursor: pointer;
+  padding-bottom: 1rem;
+}
+
+.tabs ul li.active {
+  border-bottom: 2px solid #6c23f3;
+}
+
+.add-todo form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.add-todo form input {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-grow: 1;
+  margin-right: 1rem;
+}
+
+.add-todo form button {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #6c23f3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.add-todo form button:hover {
+  background-color: #5a1bd1;
+}
+
+.todos ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 2rem;
+}
+
+.todos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.todos li p {
+  margin-left: 1rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.todos li p.completed {
+  text-decoration: line-through;
+}
+
+.todos input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.todos .delete-todo {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.todos .delete-todo button {
+  font-size: 2rem;
+  text-align: right;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #f44336;
+  cursor: pointer;
+  background: transparent;
+}
+
+.todos button.delete-all {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #f44336;
+  color: #fff;
+  cursor: pointer;
+  margin-left: auto;
+  display: block;
+}

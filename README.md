@@ -9,6 +9,10 @@
 
 # JavaScript Projects
 
+| #   | Code                                                                          | Preview                                            |
+| --- | ----------------------------------------------------------------------------- | -------------------------------------------------- |
+| 1   | [Todo App](https://github.com/khaled308/frontend-projects/tree/main/todo-app) | [Preview](https://khaled308-todo-app.netlify.app/) |
+
 # React JS Projects
 
 | #   | Code                                                                                  | Preview                                               |

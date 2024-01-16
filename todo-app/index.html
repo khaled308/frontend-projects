@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>#todo</h1>
+    </header>
+    <main>
+      <section class="tabs">
+        <ul>
+          <li class="active">All</li>
+          <li>Active</li>
+          <li>Completed</li>
+        </ul>
+      </section>
+      <section class="add-todo">
+        <form>
+          <input type="text" placeholder="add details" />
+          <button>Add</button>
+        </form>
+      </section>
+      <section class="todos">
+        <ul>
+          <!-- <li>
+            <input type="checkbox"/>
+            <p>Do Coding Challenges</p>
+            <div class="delete-todo">
+              <button>X</button>
+            </div>
+          </li> -->
+        </ul>
+        <button class="delete-all">Delete All</button>
+      </section>
+    </main>
+    <script type="module" src="Todo.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
