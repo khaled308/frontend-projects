@@ -1,0 +1,109 @@
+:root {
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: "Outfit", sans-serif;
+  color: var(--Dark-Charcoal);
+  background-color: var(--Eggshell);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "YoungSerif", sans-serif;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 1.5rem;
+  margin: 0;
+}
+
+li {
+  color: var(--Dark-Raspberry);
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+li p {
+  color: var(--Dark-Charcoal);
+}
+
+section h3 {
+  color: var(--Dark-Raspberry);
+  margin-bottom: 1rem;
+}
+
+section li span {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--White);
+  border-radius: 0.75rem;
+}
+
+section:not(:last-child) {
+  border-bottom: 1px solid var(--Light-Grey);
+}
+
+section .info .info__lst {
+  background-color: var(--Eggshell);
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0 1rem;
+  margin: 2rem 0;
+}
+
+table tr {
+  border-bottom: 1px solid var(--Light-Grey);
+}
+
+table tr td {
+  padding: 1rem 0;
+}
+
+table tr td:last-child {
+  color: var(--Dark-Raspberry);
+}
