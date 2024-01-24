@@ -1,0 +1,102 @@
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--Off-Black);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 2rem;
+  color: var(--White);
+}
+
+.card {
+  max-width: 400px;
+  background-color: var(--Dark-Grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card__header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.card__header h1 {
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.card__header h3 {
+  color: var(--Green);
+  margin-bottom: 3rem;
+}
+
+.card__links {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.card__links li {
+  background-color: var(--Grey);
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.card__links li:hover {
+  background-color: var(--Green);
+}
+
+.card__links li a {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--White);
+  display: block;
+  padding: 1.75rem;
+  text-align: center;
+}
