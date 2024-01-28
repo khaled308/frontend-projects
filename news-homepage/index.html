@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="assets/images/logo.svg" alt="logo" />
+        </div>
+        <ul class="nav__links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+
+        <div class="nav-toggle">
+          <div class="menu">
+            <img src="assets/images/icon-menu.svg" alt="menu" />
+          </div>
+          <div class="close hide">
+            <img src="assets/images/icon-menu-close.svg" alt="close" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="article-image">
+          <img src="assets/images/image-web-3-desktop.jpg" alt="" />
+        </div>
+        <div class="article-info">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="article-info__about">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button>Read more</button>
+          </div>
+        </div>
+        <div class="article-aside">
+          <h2>New</h2>
+          <ul class="article__lst">
+            <li>
+              <h3>Hydrogen VS Electric Cars</h3>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </li>
+            <li>
+              <h3>The Downsides of AI Artistry</h3>
+              <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </li>
+            <li>
+              <h3>Is VC Funding Drying Up?</h3>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script>
+      const menu = document.querySelector(".menu");
+      const close = document.querySelector(".close");
+      const navLinks = document.querySelector(".nav__links");
+      const navToggle = document.querySelector(".nav-toggle");
+
+      menu.addEventListener("click", () => {
+        navLinks.classList.add("active");
+        menu.classList.add("hide");
+        close.classList.remove("hide");
+        navToggle.classList.add("fixed");
+      });
+
+      close.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        menu.classList.remove("hide");
+        close.classList.add("hide");
+        navToggle.classList.remove("fixed");
+      });
+    </script>
+  </body>
+</html>

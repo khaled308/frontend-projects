@@ -1,0 +1,253 @@
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: var(--very-dark-blue);
+  background-color: var(--off-white);
+  margin: 0;
+  height: 1000px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.fixed {
+  position: fixed !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* start header */
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header .container .logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+header .container .nav-toggle {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 2;
+}
+
+header .nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+header .nav__links li {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--dark-grayish-blue);
+}
+
+header .nav__links li a {
+  padding: 1rem 0;
+}
+
+header .nav__links li a:hover {
+  color: var(--soft-red);
+}
+
+header .nav__links li a.active {
+  color: var(--soft-orange);
+}
+
+@media (max-width: 375px) {
+  header .container .nav-toggle {
+    display: block;
+    font-size: 2.4rem;
+    color: var(--dark-grayish-blue);
+    cursor: pointer;
+  }
+
+  header .nav__links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    bottom: 0;
+    flex-direction: column;
+    background-color: var(--off-white);
+    padding: 2rem;
+    gap: 4rem;
+    justify-content: start;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 15rem;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  header .nav__links li {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+
+  header .nav__links li a {
+    padding: 1rem 0;
+  }
+
+  header .nav__links.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* End Header */
+
+/* main */
+
+main .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+main .article-image {
+  grid-column: 1 / span 2;
+}
+
+main .article-info {
+  grid-row-start: 2;
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.article-info__about p {
+  color: var(--grayish-blue);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+
+.article-info__about button {
+  background-color: var(--soft-red);
+  color: var(--off-white);
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.article-aside {
+  grid-row: 1 / span 2;
+  background-color: var(--very-dark-blue);
+  color: var(--off-white);
+  padding: 2rem;
+}
+
+.article-aside h2 {
+  color: var(--soft-orange);
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.article-aside li {
+  padding: 1rem 0;
+}
+
+.article-aside p {
+  color: var(--grayish-blue);
+}
+
+.article-aside li {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+
+.article-aside li:not(:last-child) {
+  border-bottom: 1px solid var(--grayish-blue);
+}
+
+@media (max-width: 375px) {
+  main .article-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  main .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  main .article-image {
+    grid-column: 1 / span 1;
+  }
+
+  main .article-info {
+    grid-row-start: 2;
+    grid-column: 1 / span 1;
+  }
+
+  main .article-aside {
+    grid-row: 3 / span 1;
+  }
+}
+
+/* end main */

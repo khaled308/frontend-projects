@@ -9,6 +9,7 @@
 | 5   | [Recipe Page](https://github.com/khaled308/frontend-projects/tree/main/recipe-page)                                           | [Preview](https://recipe-page-khaled308.netlify.app/)                           |
 | 6   | [Social Links Profile](https://github.com/khaled308/frontend-projects/tree/main/social-links-profile)                         | [Preview](https://social-links-profile-khaled308.netlify.app/)                  |
 | 7   | [Social Media Dashboard](https://github.com/khaled308/frontend-projects/tree/main/social-media-dashboard-with-theme-switcher) | [Preview](https://social-media-dashboard-khaled308.netlify.app/)                |
+| 8   | [News Homepage](https://github.com/khaled308/frontend-projects/tree/main/news-homepage)                                       | [Preview](https://news-homepage-khaled308.netlify.app/)                         |
 
 # JavaScript Projects
 
