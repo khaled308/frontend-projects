@@ -22,6 +22,14 @@
           <li><a href="#">Our Work</a></li>
           <li><a href="#" class="btn btn-dark">Enroll Now</a></li>
         </ul>
+        <div class="toggle">
+          <div class="menu">
+            <img src="images/MenuAlt4Outline.svg" alt="menu" />
+          </div>
+          <div class="close hide">
+            <img src="images/XOutline.svg" alt="close" />
+          </div>
+        </div>
       </div>
     </nav>
     <div class="hero">
@@ -60,6 +68,24 @@
         </div>
       </div>
     </div>
+    <script>
+      const menu = document.querySelector(".menu");
+      const close = document.querySelector(".close");
+      const navLinks = document.querySelector(".nav__links");
+      const toggle = document.querySelector(".toggle");
+
+      menu.addEventListener("click", () => {
+        navLinks.classList.add("active");
+        menu.classList.add("hide");
+        close.classList.remove("hide");
+      });
+
+      close.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        menu.classList.remove("hide");
+        close.classList.add("hide");
+      });
+    </script>
     <script src="main.js"></script>
   </body>
 </html>
