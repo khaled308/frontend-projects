@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Art gallery website</title>
+  </head>
+  <body>
+    <header
+      class="hero overflow-x-hidden relative px-4 md:px-10 lg:px-40 md:flex items-center mb-20"
+    >
+      <div class="-mx-4 md:-mx-10 lg:-mx-40 flex">
+        <div class="hidden lg:block w-[450px] bg-almostBlack"></div>
+        <h1
+          class="z-10 uppercase hidden lg:block text-4xl lg:text-9xl font-bold absolute left-[100px] top-[190px] bg-clip-text text-transparent"
+          style="background-image: linear-gradient(90deg, white 68%, black 32%)"
+        >
+          Modern<br />Art Gallery
+        </h1>
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ./assets/desktop/image-hero.jpg,
+              ./assets/desktop/image-hero@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./assets/tablet/image-hero.jpg,
+              ./assets/tablet/image-hero@2x.jpg 2x
+            "
+          />
+          <img
+            src="./assets/mobile/image-hero.jpg"
+            srcset="./assets/mobile/image-hero@2x.jpg 2x"
+            alt="Modern Art Gallery hero image"
+            class="w-full"
+          />
+        </picture>
+      </div>
+
+      <div class="lg:pl-28">
+        <h1
+          class="lg:hidden leading-[55px] md:leading-[65px] text-6xl md:text-7xl font-bold uppercase px-4 my-8"
+        >
+          Modern<br />Art Gallery
+        </h1>
+        <p
+          class="max-w-[350px] text-lg md:text-xl lg:text-2xl leading-7 text-darkGray px-4 my-8"
+        >
+          The arts in the collection of the Modern Art Gallery all started from
+          a spark of inspiration. Will these pieces inspire you? Visit us and
+          find out.
+        </p>
+        <a
+          href="location.html"
+          class="uppercase text-white px-4 py-6 w-80 flex hover:bg-gold transition-colors duration-300"
+        >
+          <span
+            class="tracking-[3.64px] text-xl px-6 bg-almostBlack whitespace-nowrap flex items-center justify-center"
+          >
+            our location
+          </span>
+          <span class="bg-gold w-[72px] h-14 flex items-center justify-center">
+            <img src="./assets/icon-arrow-right.svg" alt="arrow" />
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="px-4 md:px-10 lg:px-40 py-45">
+        <div class="flex flex-col-reverse gap-6 md:flex-row items-center mb-8">
+          <div>
+            <h2 class="uppercase text-5xl lg:text-7xl font-bold mb-6">
+              Your Day at the Gallery
+            </h2>
+            <p class="md:max-w-[225px] text-lg leading-7 text-darkGray">
+              Wander through our distinct collections and find new insights
+              about our artists. Dive into the details of their creative
+              process.
+            </p>
+          </div>
+          <div>
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./assets/desktop/image-grid-1.jpg,
+                  ./assets/desktop/image-grid-1@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./assets/tablet/image-grid-1.jpg,
+                  ./assets/tablet/image-grid-1@2x.jpg 2x
+                "
+              />
+              <img
+                src="./assets/mobile/image-grid-1.jpg"
+                srcset="./assets/mobile/image-grid-1@2x.jpg 2x"
+                alt="Gallery image 1"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 md:h-[720px] mb-28">
+          <div class="md:w-3/5 h-full">
+            <picture class="h-full">
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./assets/desktop/image-grid-2.jpg,
+                  ./assets/desktop/image-grid-2@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./assets/tablet/image-grid-2.jpg,
+                  ./assets/tablet/image-grid-2@2x.jpg 2x
+                "
+              />
+              <img
+                src="./assets/mobile/image-grid-2.jpg"
+                srcset="./assets/mobile/image-grid-2@2x.jpg 2x"
+                alt="Gallery image 2"
+                class="w-full h-full object-cover"
+              />
+            </picture>
+          </div>
+          <div class="md:w-2/5 h-full flex flex-col">
+            <div class="h-2/5">
+              <picture class="h-full">
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./assets/desktop/image-grid-3.jpg,
+                    ./assets/desktop/image-grid-3@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./assets/tablet/image-grid-3.jpg,
+                    ./assets/tablet/image-grid-3@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./assets/mobile/image-grid-3.jpg"
+                  srcset="./assets/mobile/image-grid-3@2x.jpg 2x"
+                  alt="Gallery image 3"
+                  class="w-full h-full object-cover"
+                />
+              </picture>
+            </div>
+            <div
+              class="w-full bg-almostBlack text-white px-6 lg:px-12 py-12 md:py-[85px] mt-6 flex-grow"
+            >
+              <h2 class="text-5xl lg:text-6xl font-bold mb-6">
+                COME & BE INSPIRED
+              </h2>
+              <p class="text-lg lg:text-2xl leading-7">
+                We're excited to welcome you to our gallery and see how our
+                collections influence you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      id="location"
+      class="px-4 md:px-10 lg:px-40 py-20 bg-almostBlack flex flex-col md:flex-row justify-between md:items-center gap-5"
+    >
+      <h2
+        class="leading-[55px] md:leading-[65px] text-6xl lg:text-7xl text-white font-bold uppercase px-4 my-8"
+      >
+        MODERN<br />
+        ART GALLERY
+      </h2>
+      <p
+        class="md:max-w-[280px] lg:max-w-[480px] text-lg md:text-xl lg:text-2xl leading-7 text-white px-4"
+      >
+        The Modern Art Gallery is free to all visitors and open seven days a
+        week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+      </p>
+      <div class="flex gap-5 px-4 md:px-0">
+        <a href="#" aria-label="Facebook">
+          <img src="./assets/icon-facebook.svg" alt="" />
+        </a>
+        <a href="#" aria-label="Instagram">
+          <img src="./assets/icon-instagram.svg" alt="" />
+        </a>
+        <a href="#" aria-label="Twitter">
+          <img src="./assets/icon-twitter.svg" alt="" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
