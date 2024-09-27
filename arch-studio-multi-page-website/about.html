@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Frontend Mentor | Arch Studio Website Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-spartan">
+    <nav
+      class="wrapper relative py-8 md:py-14 bg-white flex justify-between items-center"
+    >
+      <a href="/"><img src="./assets/logo.svg" alt="Logo" /></a>
+      <ul class="hidden md:flex gap-10 items-center w-full px-20 lg:px-40">
+        <li>
+          <a href="portfolio.html" class="text-lg font-bold text-[#7D828F]"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a href="about.html" class="text-lg font-bold text-[#7D828F]"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a href="contact.html" class="text-lg font-bold text-[#7D828F]"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div class="md:hidden">
+        <button id="menu-btn" class="outline-none">
+          <img src="./assets/icons/icon-hamburger.svg" alt="hamburger" />
+        </button>
+      </div>
+    </nav>
+    <div
+      id="menu"
+      class="hidden md:hidden px-12 py-10 w-[343px] bg-[#EEEFF4] absolute top-[96px] right-0 z-10 border-t border-[#E5E5E5]"
+    >
+      <ul class="space-y-4">
+        <li>
+          <a href="portfolio.html" class="text-lg font-bold">Portfolio</a>
+        </li>
+        <li>
+          <a href="about.html" class="text-lg font-bold">About Us</a>
+        </li>
+        <li>
+          <a href="contact.html" class="text-lg font-bold">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <footer class="hidden md:flex items-center lg:px-[164px]">
+      <div class="flex items-center bg-[#EEEFF4] w-full">
+        <div class="bg-black p-[40px] flex items-center justify-center">
+          <img src="./assets/logo.svg" alt="logo" class="filter invert" />
+        </div>
+        <div class="flex gap-10 items-center ml-10">
+          <a href="portfolio.html" class="text-lg font-bold text-[#7D828F]"
+            >Portfolio</a
+          >
+          <a href="about.html" class="text-lg font-bold text-[#7D828F]"
+            >About Us</a
+          >
+          <a href="contact.html" class="text-lg font-bold text-[#7D828F]"
+            >Contact</a
+          >
+        </div>
+      </div>
+      <a
+        href="portfolio.html"
+        class="flex justify-center items-center w-[252px] h-[72px] bg-black text-white -ml-[72px]"
+      >
+        See Our Portfolio
+        <span>
+          <img
+            src="assets/icons/icon-arrow.svg"
+            alt="arrow"
+            class="filter invert"
+          />
+        </span>
+      </a>
+    </footer>
+
+    <footer class="md:hidden px-8 flex flex-col items-center bg-[#EEEFF4]">
+      <div
+        class="bg-black p-[32px] flex items-center justify-center -mt-[32px]"
+      >
+        <img src="./assets/logo.svg" alt="logo" class="filter invert w-24" />
+      </div>
+      <div class="flex flex-col gap-8 items-center py-8">
+        <a href="portfolio.html" class="text-lg font-bold text-[#7D828F]"
+          >Portfolio</a
+        >
+        <a href="about.html" class="text-lg font-bold text-[#7D828F]"
+          >About Us</a
+        >
+        <a href="contact.html" class="text-lg font-bold text-[#7D828F]"
+          >Contact</a
+        >
+      </div>
+      <a
+        href="portfolio.html"
+        class="flex justify-center items-center w-full py-4 bg-black text-white"
+      >
+        See Our Portfolio
+        <span class="ml-4">
+          <img
+            src="assets/icons/icon-arrow.svg"
+            alt="arrow"
+            class="filter invert"
+          />
+        </span>
+      </a>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

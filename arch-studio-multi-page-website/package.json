@@ -1,0 +1,15 @@
+{
+  "name": "art-gallery-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./input.css -o ./styles.css --watch --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}
