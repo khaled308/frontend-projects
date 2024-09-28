@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Arch Studio's portfolio showcasing our architectural projects and designs."
+    />
 
     <link
       rel="icon"
@@ -12,7 +16,7 @@
     />
     <link rel="stylesheet" href="./styles.css" />
 
-    <title>Frontend Mentor | Arch Studio Website Challenge</title>
+    <title>Arch Studio | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,76 +25,372 @@
     />
   </head>
   <body class="font-spartan">
-    <nav
-      class="wrapper relative py-8 md:py-14 bg-white flex justify-between items-center"
-    >
-      <a href="/"><img src="./assets/logo.svg" alt="Logo" /></a>
-      <ul class="hidden md:flex gap-10 items-center w-full px-20 lg:px-40">
-        <li>
-          <a href="portfolio.html" class="text-lg font-bold text-[#7D828F]"
-            >Portfolio</a
-          >
-        </li>
-        <li>
-          <a href="about.html" class="text-lg font-bold text-[#7D828F]"
-            >About Us</a
-          >
-        </li>
-        <li>
-          <a href="contact.html" class="text-lg font-bold text-[#7D828F]"
-            >Contact</a
-          >
-        </li>
-      </ul>
-      <div class="md:hidden">
-        <button id="menu-btn" class="outline-none">
-          <img src="./assets/icons/icon-hamburger.svg" alt="hamburger" />
+    <header>
+      <nav
+        class="wrapper relative py-8 md:py-14 bg-white flex justify-between items-center"
+      >
+        <a href="/" class="logo">
+          <img src="./assets/logo.svg" alt="Arch Studio Logo" />
+        </a>
+        <ul class="hidden md:flex gap-10 items-center w-full px-20 lg:px-40">
+          <li class="relative">
+            <a
+              href="portfolio.html"
+              class="text-lg font-bold text-[#1B1D23] hover:text-[#7D828F] transition-colors"
+              >Portfolio</a
+            >
+            <div
+              class="absolute bottom-0 left-1/4 w-1/2 h-0.5 bg-[#1B1D23]"
+            ></div>
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button
+          id="menu-btn"
+          class="md:hidden outline-none"
+          aria-label="Toggle menu"
+        >
+          <img src="./assets/icons/icon-hamburger.svg" alt="Menu icon" />
         </button>
+      </nav>
+      <div
+        id="menu"
+        class="hidden md:hidden px-12 py-10 w-[343px] bg-[#EEEFF4] absolute top-[96px] right-0 z-50 border-t border-[#E5E5E5]"
+      >
+        <ul class="space-y-4">
+          <li class="relative">
+            <a
+              href="portfolio.html"
+              class="text-lg font-bold text-[#1B1D23] hover:text-[#7D828F] transition-colors"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+              >Contact</a
+            >
+          </li>
+        </ul>
       </div>
-    </nav>
-    <div
-      id="menu"
-      class="hidden md:hidden px-12 py-10 w-[343px] bg-[#EEEFF4] absolute top-[96px] right-0 z-10 border-t border-[#E5E5E5]"
-    >
-      <ul class="space-y-4">
-        <li>
-          <a href="portfolio.html" class="text-lg font-bold">Portfolio</a>
-        </li>
-        <li>
-          <a href="about.html" class="text-lg font-bold">About Us</a>
-        </li>
-        <li>
-          <a href="contact.html" class="text-lg font-bold">Contact</a>
-        </li>
-      </ul>
-    </div>
+    </header>
+
+    <main>
+      <section class="wrapper mb-40">
+        <h1 class="sr-only">Our Portfolio</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article
+            class="h-[240px] lg:h-[560px] relative overflow-hidden group"
+          >
+            <img
+              src="assets/portfolio/desktop/image-seraph.jpg"
+              alt="Seraph Station"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
+            ></div>
+            <div
+              class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
+            >
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                Seraph Station
+              </h2>
+              <p class="text-sm md:text-base">September 2019</p>
+            </div>
+          </article>
+
+          <article
+            class="h-[240px] lg:h-[560px] relative overflow-hidden group"
+          >
+            <img
+              src="assets/portfolio/desktop/image-eebox.jpg"
+              alt="Eebox Building"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
+            ></div>
+            <div
+              class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
+            >
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                Eebox Building
+              </h2>
+              <p class="text-sm md:text-base">August 2017</p>
+            </div>
+          </article>
+
+          <article
+            class="h-[240px] lg:h-[560px] relative overflow-hidden group"
+          >
+            <img
+              src="assets/portfolio/desktop/image-federal.jpg"
+              alt="Federal II Tower"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
+            ></div>
+            <div
+              class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
+            >
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                Federal II Tower
+              </h2>
+              <p class="text-sm md:text-base">March 2017</p>
+            </div>
+          </article>
+
+          <article
+            class="h-[240px] lg:h-[560px] relative overflow-hidden group"
+          >
+            <img
+              src="assets/portfolio/desktop/image-del-sol.jpg"
+              alt="Project Del Sol"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
+            ></div>
+            <div
+              class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
+            >
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                Project Del Sol
+              </h2>
+              <p class="text-sm md:text-base">January 2016</p>
+            </div>
+          </article>
+
+          <article
+            class="h-[240px] lg:h-[560px] relative overflow-hidden group"
+          >
+            <img
+              src="assets/portfolio/desktop/image-prototype.jpg"
+              alt="Le Prototype"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
+            ></div>
+            <div
+              class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
+            >
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                Le Prototype
+              </h2>
+              <p class="text-sm md:text-base">October 2015</p>
+            </div>
+          </article>
+
+          <article
+            class="h-[240px] lg:h-[560px] relative overflow-hidden group"
+          >
+            <img
+              src="assets/portfolio/desktop/image-228b.jpg"
+              alt="228B Tower"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
+            ></div>
+            <div
+              class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
+            >
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                228B Tower
+              </h2>
+              <p class="text-sm md:text-base">April 2015</p>
+            </div>
+          </article>
+
+          <article
+            class="h-[240px] lg:h-[560px] relative overflow-hidden group"
+          >
+            <img
+              src="assets/portfolio/desktop/image-edelweiss.jpg"
+              alt="Grand Edelweiss Hotel"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
+            ></div>
+            <div
+              class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
+            >
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                Grand Edelweiss Hotel
+              </h2>
+              <p class="text-sm md:text-base">December 2013</p>
+            </div>
+          </article>
+
+          <article
+            class="h-[240px] lg:h-[560px] relative overflow-hidden group"
+          >
+            <img
+              src="assets/portfolio/desktop/image-netcry.jpg"
+              alt="Netcry Tower"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
+            ></div>
+            <div
+              class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
+            >
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                Netcry Tower
+              </h2>
+              <p class="text-sm md:text-base">August 2012</p>
+            </div>
+          </article>
+
+          <article
+            class="h-[240px] lg:h-[560px] relative overflow-hidden group"
+          >
+            <img
+              src="assets/portfolio/desktop/image-hypers.jpg"
+              alt="Hypers"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
+            ></div>
+            <div
+              class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
+            >
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                Hypers
+              </h2>
+              <p class="text-sm md:text-base">January 2012</p>
+            </div>
+          </article>
+
+          <article
+            class="h-[240px] lg:h-[560px] relative overflow-hidden group"
+          >
+            <img
+              src="assets/portfolio/desktop/image-sxiv.jpg"
+              alt="SXIV Tower"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
+            ></div>
+            <div
+              class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
+            >
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                SXIV Tower
+              </h2>
+              <p class="text-sm md:text-base">March 2011</p>
+            </div>
+          </article>
+
+          <article
+            class="h-[240px] lg:h-[560px] relative overflow-hidden group"
+          >
+            <img
+              src="assets/portfolio/desktop/image-trinity.jpg"
+              alt="Trinity Bank Tower"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
+            ></div>
+            <div
+              class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
+            >
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                Trinity Bank Tower
+              </h2>
+              <p class="text-sm md:text-base">September 2010</p>
+            </div>
+          </article>
+
+          <article
+            class="h-[240px] lg:h-[560px] relative overflow-hidden group"
+          >
+            <img
+              src="assets/portfolio/desktop/image-paramour.jpg"
+              alt="Project Paramour"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity"
+            ></div>
+            <div
+              class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
+            >
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                Project Paramour
+              </h2>
+              <p class="text-sm md:text-base">February 2008</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
 
     <footer class="hidden md:flex items-center lg:px-[164px]">
       <div class="flex items-center bg-[#EEEFF4] w-full">
         <div class="bg-black p-[40px] flex items-center justify-center">
-          <img src="./assets/logo.svg" alt="logo" class="filter invert" />
+          <img
+            src="./assets/logo.svg"
+            alt="Arch Studio logo"
+            class="filter invert"
+          />
         </div>
-        <div class="flex gap-10 items-center ml-10">
-          <a href="portfolio.html" class="text-lg font-bold text-[#7D828F]"
+        <nav class="flex gap-10 items-center ml-10">
+          <a
+            href="portfolio.html"
+            class="text-lg font-bold text-[#1B1D23] hover:text-[#7D828F] transition-colors"
             >Portfolio</a
           >
-          <a href="about.html" class="text-lg font-bold text-[#7D828F]"
+          <a
+            href="about.html"
+            class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
             >About Us</a
           >
-          <a href="contact.html" class="text-lg font-bold text-[#7D828F]"
+          <a
+            href="contact.html"
+            class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
             >Contact</a
           >
-        </div>
+        </nav>
       </div>
       <a
         href="portfolio.html"
-        class="flex justify-center items-center w-[252px] h-[72px] bg-black text-white -ml-[72px]"
+        class="flex justify-center items-center w-[252px] h-[72px] bg-black text-white -ml-[72px] hover:bg-[#60636D] transition-colors"
       >
         See Our Portfolio
-        <span>
+        <span class="ml-4">
           <img
             src="assets/icons/icon-arrow.svg"
-            alt="arrow"
+            alt="Arrow icon"
             class="filter invert"
           />
         </span>
@@ -101,28 +401,38 @@
       <div
         class="bg-black p-[32px] flex items-center justify-center -mt-[32px]"
       >
-        <img src="./assets/logo.svg" alt="logo" class="filter invert w-24" />
+        <img
+          src="./assets/logo.svg"
+          alt="Arch Studio logo"
+          class="filter invert w-24"
+        />
       </div>
-      <div class="flex flex-col gap-8 items-center py-8">
-        <a href="portfolio.html" class="text-lg font-bold text-[#7D828F]"
+      <nav class="flex flex-col gap-8 items-center py-8">
+        <a
+          href="portfolio.html"
+          class="text-lg font-bold text-[#1B1D23] hover:text-[#7D828F] transition-colors"
           >Portfolio</a
         >
-        <a href="about.html" class="text-lg font-bold text-[#7D828F]"
+        <a
+          href="about.html"
+          class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
           >About Us</a
         >
-        <a href="contact.html" class="text-lg font-bold text-[#7D828F]"
+        <a
+          href="contact.html"
+          class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
           >Contact</a
         >
-      </div>
+      </nav>
       <a
         href="portfolio.html"
-        class="flex justify-center items-center w-full py-4 bg-black text-white"
+        class="flex justify-center items-center w-full py-4 bg-black text-white hover:bg-[#60636D] transition-colors"
       >
         See Our Portfolio
         <span class="ml-4">
           <img
             src="assets/icons/icon-arrow.svg"
-            alt="arrow"
+            alt="Arrow icon"
             class="filter invert"
           />
         </span>

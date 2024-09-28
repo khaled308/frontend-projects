@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Arch Studio - Innovative architectural designs for modern living and working spaces."
+    />
 
     <link
       rel="icon"
@@ -12,7 +16,7 @@
     />
     <link rel="stylesheet" href="./styles.css" />
 
-    <title>Frontend Mentor | Arch Studio Website Challenge</title>
+    <title>Arch Studio | Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,275 +25,329 @@
     />
   </head>
   <body class="font-spartan">
-    <nav
-      class="wrapper relative py-8 md:py-14 bg-white flex justify-between items-center"
-    >
-      <a href="/"><img src="./assets/logo.svg" alt="Logo" /></a>
-      <ul class="hidden md:flex gap-10 items-center w-full px-20 lg:px-40">
-        <li>
-          <a href="portfolio.html" class="text-lg font-bold text-[#7D828F]"
-            >Portfolio</a
-          >
-        </li>
-        <li>
-          <a href="about.html" class="text-lg font-bold text-[#7D828F]"
-            >About Us</a
-          >
-        </li>
-        <li>
-          <a href="contact.html" class="text-lg font-bold text-[#7D828F]"
-            >Contact</a
-          >
-        </li>
-      </ul>
-      <div class="md:hidden">
-        <button id="menu-btn" class="outline-none">
-          <img src="./assets/icons/icon-hamburger.svg" alt="hamburger" />
-        </button>
-      </div>
-    </nav>
-    <div
-      id="menu"
-      class="hidden md:hidden px-12 py-10 w-[343px] bg-[#EEEFF4] absolute top-[96px] right-0 z-10 border-t border-[#E5E5E5]"
-    >
-      <ul class="space-y-4">
-        <li>
-          <a href="portfolio.html" class="text-lg font-bold">Portfolio</a>
-        </li>
-        <li>
-          <a href="about.html" class="text-lg font-bold">About Us</a>
-        </li>
-        <li>
-          <a href="contact.html" class="text-lg font-bold">Contact</a>
-        </li>
-      </ul>
-    </div>
-    <!-- hero -->
-    <section class="md:px-[97px] lg:px-[164px] relative">
-      <div class="relative h-[560px] md:h-[720px]">
-        <img
-          src="./assets/home/desktop/image-hero-paramour.jpg"
-          alt="hero"
-          class="w-full h-full object-cover"
-        />
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div
-          class="absolute inset-0 flex flex-col justify-center items-start p-6 md:p-12 lg:p-16"
-        >
-          <div class="py-[110px]">
-            <h1
-              class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4"
-            >
-              Project Paramour
-            </h1>
-            <p class="text-base md:text-xl text-white mb-6 max-w-md">
-              Project made for an art museum near Southwest London. Project
-              Paramour is a statement of bold, modern architecture.
-            </p>
-            <a
-              href="#"
-              class="bg-[#1B1D23] text-white px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-bold hover:bg-[#60636D] transition-colors duration-300"
-              >See Our Portfolio</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end hero -->
-    <section class="relative wrapper py-12">
-      <h1
-        class="hidden md:block md:text-[120px] lg:text-[250px] font-bold text-[#EEEFF4] absolute top-0 left-[97px] lg:left-[164px] z-10"
+    <header>
+      <nav
+        class="wrapper relative py-8 md:py-14 bg-white flex justify-between items-center"
       >
-        Welcome
-      </h1>
-      <div
-        class="flex lg:justify-end items-center mt-[50px] md:mt-[100px] lg:mt-[150px]"
-      >
-        <div class="max-w-[446px]">
-          <h2 class="text-4xl md:text-7xl font-bold mb-6">
-            Welcome to Arch Studio
-          </h2>
-          <div class="space-y-4">
-            <p class="text-base text-[#7D828F]">
-              We have a unique network and skillset to help bring your projects
-              to life. Our small team of highly skilled individuals combined
-              with our large network put us in a strong position to deliver
-              exceptional results.
-            </p>
-            <p class="text-base text-[#7D828F]">
-              Over the past 10 years, we have worked on all kinds of projects.
-              From stations to high-rise buildings, we create spaces that
-              inspire and delight.
-            </p>
-            <p class="text-base text-[#7D828F]">
-              We work closely with our clients so that we understand the
-              intricacies of each project. This allows us to work in harmony the
-              surrounding area to create truly stunning projects that will stand
-              the test of time.
-            </p>
-          </div>
-        </div>
-        <div class="hidden lg:block ml-20">
-          <img src="assets/home/desktop/image-welcome.jpg" alt="welcome" />
-        </div>
-      </div>
-    </section>
-
-    <section class="md:px-[97px] lg:px-[164px] relative">
-      <div class="relative h-[400px] md:h-[560px]">
-        <img
-          src="./assets/home/desktop/image-small-team.jpg"
-          alt="hero"
-          class="w-full h-full object-cover"
-        />
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div
-          class="absolute inset-0 flex flex-col justify-center items-start p-6 md:p-12 lg:p-16"
-        >
-          <div class="py-8 md:py-12">
-            <h1
-              class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
-            >
-              Small team, <br />
-              big ideas
-            </h1>
+        <a href="/" class="logo">
+          <img src="./assets/logo.svg" alt="Arch Studio Logo" />
+        </a>
+        <ul class="hidden md:flex gap-10 items-center w-full px-20 lg:px-40">
+          <li class="relative">
             <a
-              href="#"
-              class="bg-[#1B1D23] text-white px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-bold hover:bg-[#60636D] transition-colors duration-300"
+              href="portfolio.html"
+              class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
               >About Us</a
             >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button
+          id="menu-btn"
+          class="md:hidden outline-none"
+          aria-label="Toggle menu"
+        >
+          <img src="./assets/icons/icon-hamburger.svg" alt="Menu icon" />
+        </button>
+      </nav>
+      <div
+        id="menu"
+        class="hidden md:hidden px-12 py-10 w-[343px] bg-[#EEEFF4] absolute top-[96px] right-0 z-50 border-t border-[#E5E5E5]"
+      >
+        <ul class="space-y-4">
+          <li class="relative">
+            <a
+              href="portfolio.html"
+              class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero md:px-[97px] lg:px-[164px] relative">
+        <div class="relative h-[560px] md:h-[720px]">
+          <img
+            src="./assets/home/desktop/image-hero-paramour.jpg"
+            alt="Project Paramour"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+          <div
+            class="absolute inset-0 flex flex-col justify-center items-start p-6 md:p-12 lg:p-16"
+          >
+            <div class="py-[110px]">
+              <h1
+                class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4"
+              >
+                Project Paramour
+              </h1>
+              <p class="text-base md:text-xl text-white mb-6 max-w-md">
+                Project made for an art museum near Southwest London. Project
+                Paramour is a statement of bold, modern architecture.
+              </p>
+              <a
+                href="portfolio.html"
+                class="bg-[#1B1D23] text-white px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-bold hover:bg-[#60636D] transition-colors duration-300"
+                >See Our Portfolio</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="wrapper py-[200px]">
-      <div class="mb-12 flex flex-row justify-between items-center">
-        <h2 class="text-4xl md:text-7xl font-bold">Featured</h2>
-        <button
-          class="hidden md:flex text-lg font-bold text-white items-center gap-2 bg-[#1B1D23] px-6 py-3 md:px-8 md:py-4 md:text-lg"
+      <section class="welcome relative wrapper py-12">
+        <h2
+          class="hidden md:block md:text-[120px] lg:text-[250px] font-bold text-[#EEEFF4] absolute top-0 left-[97px] lg:left-[164px] z-10"
         >
-          See All
-          <span>
+          Welcome
+        </h2>
+        <div
+          class="flex lg:justify-end items-center mt-[50px] md:mt-[100px] lg:mt-[150px]"
+        >
+          <div class="max-w-[446px]">
+            <h2 class="text-4xl md:text-7xl font-bold mb-6">
+              Welcome to Arch Studio
+            </h2>
+            <div class="space-y-4">
+              <p class="text-base text-[#7D828F]">
+                We have a unique network and skillset to help bring your
+                projects to life. Our small team of highly skilled individuals
+                combined with our large network put us in a strong position to
+                deliver exceptional results.
+              </p>
+              <p class="text-base text-[#7D828F]">
+                Over the past 10 years, we have worked on all kinds of projects.
+                From stations to high-rise buildings, we create spaces that
+                inspire and delight.
+              </p>
+              <p class="text-base text-[#7D828F]">
+                We work closely with our clients so that we understand the
+                intricacies of each project. This allows us to work in harmony
+                with the surrounding area to create truly stunning projects that
+                will stand the test of time.
+              </p>
+            </div>
+          </div>
+          <div class="hidden lg:block ml-20">
+            <img
+              src="assets/home/desktop/image-welcome.jpg"
+              alt="Welcome to Arch Studio"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="small-team md:px-[97px] lg:px-[164px] relative">
+        <div class="relative h-[400px] md:h-[560px]">
+          <img
+            src="./assets/home/desktop/image-small-team.jpg"
+            alt="Small team, big ideas"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+          <div
+            class="absolute inset-0 flex flex-col justify-center items-start p-6 md:p-12 lg:p-16"
+          >
+            <div class="py-8 md:py-12">
+              <h2
+                class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
+              >
+                Small team, <br />big ideas
+              </h2>
+              <a
+                href="about.html"
+                class="bg-[#1B1D23] text-white px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-bold hover:bg-[#60636D] transition-colors duration-300"
+                >About Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured wrapper py-[200px]">
+        <div class="mb-12 flex flex-row justify-between items-center">
+          <h2 class="text-4xl md:text-7xl font-bold">Featured</h2>
+          <a
+            href="portfolio.html"
+            class="hidden md:flex text-lg font-bold text-white items-center gap-2 bg-[#1B1D23] px-6 py-3 md:px-8 md:py-4 md:text-lg hover:bg-[#60636D] transition-colors duration-300"
+          >
+            See All
             <img
               src="assets/icons/icon-arrow.svg"
               alt="arrow"
               class="filter invert"
             />
-          </span>
-        </button>
-      </div>
-      <div class="relative flex flex-col lg:flex-row gap-6 justify-between">
-        <div class="h-[240px] lg:h-[560px] relative overflow-hidden">
-          <img
-            src="assets/portfolio/desktop/image-del-sol.jpg"
-            alt="project-paramour"
-            class="w-full h-full object-cover"
-          />
-          <div class="absolute inset-0 bg-black opacity-50"></div>
-          <h2
-            class="hidden md:block absolute -top-10 right-0 text-[250px] font-bold text-white opacity-50 z-10"
-          >
-            1
-          </h2>
-          <div
-            class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
-          >
-            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
-              Project Del Sol
-            </h2>
-            <a href="#" class="text-sm md:text-base hover:underline opacity-50"
-              >View All Projects</a
-            >
-          </div>
+          </a>
         </div>
-        <div class="h-[240px] lg:h-[560px] relative overflow-hidden">
-          <img
-            src="assets/portfolio/desktop/image-228b.jpg"
-            alt="project-paramour"
-            class="w-full h-full object-cover"
-          />
-          <div class="absolute inset-0 bg-black opacity-50"></div>
-          <h2
-            class="hidden md:block absolute -top-10 right-0 text-[250px] font-bold text-white opacity-50 z-10"
+        <div class="relative flex flex-col lg:flex-row gap-6 justify-between">
+          <article
+            class="h-[240px] lg:h-[560px] relative overflow-hidden group"
           >
-            2
-          </h2>
-          <div
-            class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
-          >
-            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
-              228B Tower
-            </h2>
-            <a href="#" class="text-sm md:text-base hover:underline opacity-50"
-              >View All Projects</a
+            <img
+              src="assets/portfolio/desktop/image-del-sol.jpg"
+              alt="Project Del Sol"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-50 group-hover:opacity-75 transition-opacity"
+            ></div>
+            <h3
+              class="hidden md:block absolute -top-10 right-0 text-[250px] font-bold text-white opacity-50 z-10"
             >
-          </div>
-        </div>
-        <div class="h-[240px] lg:h-[560px] relative overflow-hidden">
-          <img
-            src="assets/portfolio/desktop/image-prototype.jpg"
-            alt="project-paramour"
-            class="w-full h-full object-cover"
-          />
-          <div class="absolute inset-0 bg-black opacity-50"></div>
-          <h2
-            class="hidden md:block absolute -top-10 right-0 text-[250px] font-bold text-white opacity-50 z-10"
-          >
-            3
-          </h2>
-          <div
-            class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
-          >
-            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
-              Le Prototype
-            </h2>
-            <a href="#" class="text-sm md:text-base hover:underline opacity-50"
-              >View All Projects</a
+              1
+            </h3>
+            <div
+              class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
             >
-          </div>
+              <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                Project Del Sol
+              </h3>
+              <a
+                href="portfolio.html"
+                class="text-sm md:text-base hover:underline opacity-50"
+                >View All Projects</a
+              >
+            </div>
+          </article>
+          <article
+            class="h-[240px] lg:h-[560px] relative overflow-hidden group"
+          >
+            <img
+              src="assets/portfolio/desktop/image-228b.jpg"
+              alt="228B Tower"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-50 group-hover:opacity-75 transition-opacity"
+            ></div>
+            <h3
+              class="hidden md:block absolute -top-10 right-0 text-[250px] font-bold text-white opacity-50 z-10"
+            >
+              2
+            </h3>
+            <div
+              class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
+            >
+              <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                228B Tower
+              </h3>
+              <a
+                href="portfolio.html"
+                class="text-sm md:text-base hover:underline opacity-50"
+                >View All Projects</a
+              >
+            </div>
+          </article>
+          <article
+            class="h-[240px] lg:h-[560px] relative overflow-hidden group"
+          >
+            <img
+              src="assets/portfolio/desktop/image-prototype.jpg"
+              alt="Le Prototype"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-50 group-hover:opacity-75 transition-opacity"
+            ></div>
+            <h3
+              class="hidden md:block absolute -top-10 right-0 text-[250px] font-bold text-white opacity-50 z-10"
+            >
+              3
+            </h3>
+            <div
+              class="absolute z-10 bottom-0 left-0 p-6 md:p-8 lg:p-10 text-white"
+            >
+              <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
+                Le Prototype
+              </h3>
+              <a
+                href="portfolio.html"
+                class="text-sm md:text-base hover:underline opacity-50"
+                >View All Projects</a
+              >
+            </div>
+          </article>
         </div>
-      </div>
-      <button
-        class="w-full mt-4 flex md:hidden text-lg font-bold text-white justify-center items-center gap-2 bg-[#1B1D23] px-6 py-3 md:px-8 md:py-4 md:text-lg"
-      >
-        See All
-        <span>
+        <a
+          href="portfolio.html"
+          class="w-full mt-4 flex md:hidden text-lg font-bold text-white justify-center items-center gap-2 bg-[#1B1D23] px-6 py-3 md:px-8 md:py-4 md:text-lg hover:bg-[#60636D] transition-colors duration-300"
+        >
+          See All
           <img
             src="assets/icons/icon-arrow.svg"
             alt="arrow"
             class="filter invert"
           />
-        </span>
-      </button>
-    </section>
+        </a>
+      </section>
+    </main>
 
     <footer class="hidden md:flex items-center lg:px-[164px]">
       <div class="flex items-center bg-[#EEEFF4] w-full">
         <div class="bg-black p-[40px] flex items-center justify-center">
-          <img src="./assets/logo.svg" alt="logo" class="filter invert" />
+          <img
+            src="./assets/logo.svg"
+            alt="Arch Studio logo"
+            class="filter invert"
+          />
         </div>
-        <div class="flex gap-10 items-center ml-10">
-          <a href="portfolio.html" class="text-lg font-bold text-[#7D828F]"
+        <nav class="flex gap-10 items-center ml-10">
+          <a
+            href="portfolio.html"
+            class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
             >Portfolio</a
           >
-          <a href="about.html" class="text-lg font-bold text-[#7D828F]"
+          <a
+            href="about.html"
+            class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
             >About Us</a
           >
-          <a href="contact.html" class="text-lg font-bold text-[#7D828F]"
+          <a
+            href="contact.html"
+            class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
             >Contact</a
           >
-        </div>
+        </nav>
       </div>
       <a
         href="portfolio.html"
-        class="flex justify-center items-center w-[252px] h-[72px] bg-black text-white -ml-[72px]"
+        class="flex justify-center items-center w-[252px] h-[72px] bg-black text-white -ml-[72px] hover:bg-[#60636D] transition-colors"
       >
         See Our Portfolio
-        <span>
+        <span class="ml-4">
           <img
             src="assets/icons/icon-arrow.svg"
-            alt="arrow"
+            alt="Arrow icon"
             class="filter invert"
           />
         </span>
@@ -300,33 +358,44 @@
       <div
         class="bg-black p-[32px] flex items-center justify-center -mt-[32px]"
       >
-        <img src="./assets/logo.svg" alt="logo" class="filter invert w-24" />
+        <img
+          src="./assets/logo.svg"
+          alt="Arch Studio logo"
+          class="filter invert w-24"
+        />
       </div>
-      <div class="flex flex-col gap-8 items-center py-8">
-        <a href="portfolio.html" class="text-lg font-bold text-[#7D828F]"
+      <nav class="flex flex-col gap-8 items-center py-8">
+        <a
+          href="portfolio.html"
+          class="text-lg font-bold text-[#1B1D23] hover:text-[#7D828F] transition-colors"
           >Portfolio</a
         >
-        <a href="about.html" class="text-lg font-bold text-[#7D828F]"
+        <a
+          href="about.html"
+          class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
           >About Us</a
         >
-        <a href="contact.html" class="text-lg font-bold text-[#7D828F]"
+        <a
+          href="contact.html"
+          class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
           >Contact</a
         >
-      </div>
+      </nav>
       <a
         href="portfolio.html"
-        class="flex justify-center items-center w-full py-4 bg-black text-white"
+        class="flex justify-center items-center w-full py-4 bg-black text-white hover:bg-[#60636D] transition-colors"
       >
         See Our Portfolio
         <span class="ml-4">
           <img
             src="assets/icons/icon-arrow.svg"
-            alt="arrow"
+            alt="Arrow icon"
             class="filter invert"
           />
         </span>
       </a>
     </footer>
+
     <script src="./main.js"></script>
   </body>
 </html>
