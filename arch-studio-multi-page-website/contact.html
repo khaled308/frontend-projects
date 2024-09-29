@@ -21,108 +21,299 @@
     />
   </head>
   <body class="font-spartan">
-    <nav
-      class="wrapper relative py-8 md:py-14 bg-white flex justify-between items-center"
-    >
-      <a href="/"><img src="./assets/logo.svg" alt="Logo" /></a>
-      <ul class="hidden md:flex gap-10 items-center w-full px-20 lg:px-40">
-        <li>
-          <a href="portfolio.html" class="text-lg font-bold text-[#7D828F]"
-            >Portfolio</a
-          >
-        </li>
-        <li>
-          <a href="about.html" class="text-lg font-bold text-[#7D828F]"
-            >About Us</a
-          >
-        </li>
-        <li>
-          <a href="contact.html" class="text-lg font-bold text-[#7D828F]"
-            >Contact</a
-          >
-        </li>
-      </ul>
-      <div class="md:hidden">
-        <button id="menu-btn" class="outline-none">
-          <img src="./assets/icons/icon-hamburger.svg" alt="hamburger" />
+    <header>
+      <nav
+        class="wrapper relative py-8 md:py-14 bg-white flex justify-between items-center"
+      >
+        <a href="/" class="logo">
+          <img src="./assets/logo.svg" alt="Arch Studio Logo" />
+        </a>
+        <ul class="hidden md:flex gap-10 items-center w-full px-20 lg:px-40">
+          <li class="relative">
+            <a
+              href="portfolio.html"
+              class="text-lg font-bold text-[#1B1D23] hover:text-[#7D828F] transition-colors"
+              >Portfolio</a
+            >
+            <div
+              class="absolute bottom-0 left-1/4 w-1/2 h-0.5 bg-[#1B1D23]"
+            ></div>
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button
+          id="menu-btn"
+          class="md:hidden outline-none"
+          aria-label="Toggle menu"
+        >
+          <img src="./assets/icons/icon-hamburger.svg" alt="Menu icon" />
         </button>
+      </nav>
+      <div
+        id="menu"
+        class="hidden md:hidden px-12 py-10 w-[343px] bg-[#EEEFF4] absolute top-[96px] right-0 z-50 border-t border-[#E5E5E5]"
+      >
+        <ul class="space-y-4">
+          <li class="relative">
+            <a
+              href="portfolio.html"
+              class="text-lg font-bold text-[#1B1D23] hover:text-[#7D828F] transition-colors"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+              >Contact</a
+            >
+          </li>
+        </ul>
       </div>
-    </nav>
-    <div
-      id="menu"
-      class="hidden md:hidden px-12 py-10 w-[343px] bg-[#EEEFF4] absolute top-[96px] right-0 z-10 border-t border-[#E5E5E5]"
-    >
-      <ul class="space-y-4">
-        <li>
-          <a href="portfolio.html" class="text-lg font-bold">Portfolio</a>
-        </li>
-        <li>
-          <a href="about.html" class="text-lg font-bold">About Us</a>
-        </li>
-        <li>
-          <a href="contact.html" class="text-lg font-bold">Contact</a>
-        </li>
-      </ul>
-    </div>
+    </header>
+
+    <main class="space-y-28 md:space-y-60 mb-60">
+      <section class="md:px-[97px] lg:px-[164px]">
+        <div class="flex flex-col lg:flex-row items-end relative">
+          <div class="relative w-full lg:w-2/3">
+            <img
+              src="assets/contact/desktop/image-hero.jpg"
+              alt="Architectural project showcase"
+              class="w-full h-[240px] md:h-[720px] lg:h-[720px] object-cover"
+            />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+          </div>
+          <div
+            class="bg-white -mt-14 md:mt-0 px-8 md:px-0 w-full md:w-[514px] md:absolute md:right-0 lg:w-1/2 md:bottom-0 relative"
+          >
+            <h2
+              class="absolute right-0 top-0 -translate-y-1/2 hidden md:block md:text-[120px] lg:text-[180px] font-bold text-[#EEEFF4] whitespace-nowrap"
+            >
+              Contact
+            </h2>
+            <div class="py-12 md:p-16 lg:p-24 lg:pr-0">
+              <h2 class="text-4xl md:text-5xl lg:text-7xl font-bold mb-8">
+                Tell us about your project
+              </h2>
+              <p class="text-base text-[#7D828F] leading-relaxed">
+                We'd love to hear more about your project. Please, leave a
+                message below or give us a call. We have two offices, one in
+                Texas and one in Tennessee. If you find yourself nearby, come
+                say hello!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper">
+        <div class="flex flex-col lg:flex-row justify-between items-start">
+          <h2
+            class="text-4xl md:text-5xl lg:text-7xl font-bold mb-12 lg:mb-0 lg:w-2/5"
+          >
+            Contact<br />
+            Details
+          </h2>
+          <div
+            class="flex flex-col md:flex-row justify-between lg:w-3/5 gap-12 md:gap-16"
+          >
+            <div class="flex-1">
+              <h3 class="text-xl font-bold text-[#60636D] mb-8">Main Office</h3>
+              <ul class="text-lg text-[#60636D] mb-10 space-y-4">
+                <li>
+                  <span class="font-semibold">Mail:</span> archone@mail.com
+                </li>
+                <li>
+                  <span class="font-semibold">Address:</span> 1892 Chenoweth
+                  Drive TN
+                </li>
+                <li><span class="font-semibold">Phone:</span> 123-456-3451</li>
+              </ul>
+              <a
+                href="#"
+                class="inline-flex items-center gap-4 text-lg font-bold text-[#1B1D23] hover:text-[#60636D] transition-colors"
+              >
+                <span>View on Map</span>
+                <img
+                  src="./assets/icons/icon-arrow.svg"
+                  alt="Arrow icon"
+                  class="w-6 h-6"
+                />
+              </a>
+            </div>
+
+            <div class="flex-1">
+              <h3 class="text-xl font-bold text-[#60636D] mb-8">Office II</h3>
+              <ul class="text-lg text-[#60636D] mb-10 space-y-4">
+                <li>
+                  <span class="font-semibold">Mail:</span> archtwo@mail.com
+                </li>
+                <li>
+                  <span class="font-semibold">Address:</span> 3399 Wines Lane TX
+                </li>
+                <li><span class="font-semibold">Phone:</span> 832-123-4321</li>
+              </ul>
+              <a
+                href="#"
+                class="inline-flex items-center gap-4 text-lg font-bold text-[#1B1D23] hover:text-[#60636D] transition-colors"
+              >
+                <span>View on Map</span>
+                <img
+                  src="./assets/icons/icon-arrow.svg"
+                  alt="Arrow icon"
+                  class="w-6 h-6"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full mt-16 md:mt-20 lg:mt-24">
+          <img
+            src="./assets/contact/desktop/image-map.png"
+            alt="Map showing office locations"
+            class="w-full h-auto object-cover rounded-lg shadow-xl"
+          />
+        </div>
+      </section>
+
+      <section class="wrapper">
+        <div
+          class="flex flex-col lg:flex-row lg:items-start lg:justify-between"
+        >
+          <h2
+            class="text-4xl md:text-5xl lg:text-7xl font-bold mb-12 lg:mb-0 lg:w-1/3"
+          >
+            Connect with us
+          </h2>
+          <div class="lg:w-2/3">
+            <form class="flex flex-col gap-8 relative">
+              <input
+                type="text"
+                placeholder="Name"
+                class="p-4 border-b-2 border-[#1B1D23] focus:outline-none focus:border-[#60636D] transition-colors"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="p-4 border-b-2 border-[#1B1D23] focus:outline-none focus:border-[#60636D] transition-colors"
+              />
+              <textarea
+                placeholder="Message"
+                class="p-4 border-b-2 border-[#1B1D23] focus:outline-none focus:border-[#60636D] transition-colors h-40 resize-none"
+              ></textarea>
+              <button
+                type="submit"
+                class="absolute bottom-0 translate-y-full right-0 bg-black p-6 hover:bg-[#60636D] transition-colors"
+              >
+                <img
+                  src="./assets/icons/icon-arrow.svg"
+                  alt="Submit"
+                  class="w-6 h-6 filter invert"
+                />
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="hidden md:flex items-center lg:px-[164px]">
       <div class="flex items-center bg-[#EEEFF4] w-full">
         <div class="bg-black p-[40px] flex items-center justify-center">
-          <img src="./assets/logo.svg" alt="logo" class="filter invert" />
-        </div>
-        <div class="flex gap-10 items-center ml-10">
-          <a href="portfolio.html" class="text-lg font-bold text-[#7D828F]"
-            >Portfolio</a
-          >
-          <a href="about.html" class="text-lg font-bold text-[#7D828F]"
-            >About Us</a
-          >
-          <a href="contact.html" class="text-lg font-bold text-[#7D828F]"
-            >Contact</a
-          >
-        </div>
-      </div>
-      <a
-        href="portfolio.html"
-        class="flex justify-center items-center w-[252px] h-[72px] bg-black text-white -ml-[72px]"
-      >
-        See Our Portfolio
-        <span>
           <img
-            src="assets/icons/icon-arrow.svg"
-            alt="arrow"
+            src="./assets/logo.svg"
+            alt="Arch Studio logo"
             class="filter invert"
           />
-        </span>
-      </a>
-    </footer>
-
-    <footer class="md:hidden px-8 flex flex-col items-center bg-[#EEEFF4]">
-      <div
-        class="bg-black p-[32px] flex items-center justify-center -mt-[32px]"
-      >
-        <img src="./assets/logo.svg" alt="logo" class="filter invert w-24" />
-      </div>
-      <div class="flex flex-col gap-8 items-center py-8">
-        <a href="portfolio.html" class="text-lg font-bold text-[#7D828F]"
-          >Portfolio</a
-        >
-        <a href="about.html" class="text-lg font-bold text-[#7D828F]"
-          >About Us</a
-        >
-        <a href="contact.html" class="text-lg font-bold text-[#7D828F]"
-          >Contact</a
-        >
+        </div>
+        <nav class="flex gap-10 items-center ml-10">
+          <a
+            href="portfolio.html"
+            class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+            >Portfolio</a
+          >
+          <a
+            href="about.html"
+            class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+            >About Us</a
+          >
+          <a
+            href="contact.html"
+            class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+            >Contact</a
+          >
+        </nav>
       </div>
       <a
         href="portfolio.html"
-        class="flex justify-center items-center w-full py-4 bg-black text-white"
+        class="flex justify-center items-center w-[252px] h-[72px] bg-black text-white -ml-[72px] hover:bg-[#60636D] transition-colors"
       >
         See Our Portfolio
         <span class="ml-4">
           <img
             src="assets/icons/icon-arrow.svg"
-            alt="arrow"
+            alt="Arrow icon"
+            class="filter invert"
+          />
+        </span>
+      </a>
+    </footer>
+    <footer class="md:hidden px-8 flex flex-col items-center bg-[#EEEFF4]">
+      <div
+        class="bg-black p-[32px] flex items-center justify-center -mt-[32px]"
+      >
+        <img
+          src="./assets/logo.svg"
+          alt="Arch Studio logo"
+          class="filter invert w-24"
+        />
+      </div>
+      <nav class="flex flex-col gap-8 items-center py-8">
+        <a
+          href="portfolio.html"
+          class="text-lg font-bold text-[#1B1D23] hover:text-[#7D828F] transition-colors"
+          >Portfolio</a
+        >
+        <a
+          href="about.html"
+          class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+          >About Us</a
+        >
+        <a
+          href="contact.html"
+          class="text-lg font-bold text-[#7D828F] hover:text-[#1B1D23] transition-colors"
+          >Contact</a
+        >
+      </nav>
+      <a
+        href="portfolio.html"
+        class="flex justify-center items-center w-full py-4 bg-black text-white hover:bg-[#60636D] transition-colors"
+      >
+        See Our Portfolio
+        <span class="ml-4">
+          <img
+            src="assets/icons/icon-arrow.svg"
+            alt="Arrow icon"
             class="filter invert"
           />
         </span>
