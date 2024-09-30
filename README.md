@@ -14,7 +14,8 @@ This repository contains a collection of frontend projects implemented using HTM
 | 6   | Social Links Profile   | [Code](https://github.com/khaled308/frontend-projects/tree/main/social-links-profile)                       | [Preview](https://social-links-profile-khaled308.netlify.app/)                  |
 | 7   | Social Media Dashboard | [Code](https://github.com/khaled308/frontend-projects/tree/main/social-media-dashboard-with-theme-switcher) | [Preview](https://social-media-dashboard-khaled308.netlify.app/)                |
 | 8   | News Homepage          | [Code](https://github.com/khaled308/frontend-projects/tree/main/news-homepage)                              | [Preview](https://news-homepage-khaled308.netlify.app/)                         |
-| 9   | Art Gallery            | [Code](https://github.com/khaled308/frontend-projects/tree/main/art-gallery)                                | [Preview](https://art-gallery-khaled308.netlify.app/)                           |
+| 9   | Art Gallery            | [Code](https://github.com/khaled308/frontend-projects/tree/main/art-gallery-website)                        | [Preview](https://art-gallery-khaled308.netlify.app/)                           |
+| 10  | Arch Studio            | [Code](https://github.com/khaled308/frontend-projects/tree/main/arch-studio-multi-page-website)             | [Preview](https://arch-studio-khaled308.netlify.app/)                           |
 
 ## JavaScript Projects
 
