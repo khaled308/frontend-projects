@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "fraunces";
+  src: url("./assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf");
+}
+
+@font-face {
+  font-family: "manrope";
+  src: url("assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
+}
+
+.wrapper {
+  @apply px-8 md:px-[97px] lg:px-[164px];
+}
+
+header {
+  background-position: -8% 32%, 104% 83%;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background-position: -53% 32%, 116% 83%;
+  }
+}
