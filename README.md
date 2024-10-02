@@ -16,6 +16,7 @@ This repository contains a collection of frontend projects implemented using HTM
 | 8   | News Homepage          | [Code](https://github.com/khaled308/frontend-projects/tree/main/news-homepage)                              | [Preview](https://news-homepage-khaled308.netlify.app/)                         |
 | 9   | Art Gallery            | [Code](https://github.com/khaled308/frontend-projects/tree/main/art-gallery-website)                        | [Preview](https://art-gallery-khaled308.netlify.app/)                           |
 | 10  | Arch Studio            | [Code](https://github.com/khaled308/frontend-projects/tree/main/arch-studio-multi-page-website)             | [Preview](https://arch-studio-khaled308.netlify.app/)                           |
+| 11  | Workit Landing Page    | [Code](https://github.com/khaled308/frontend-projects/tree/main/workit-landing-page)                        | [Preview](https://khaled308-workit-landing-page.netlify.app/)                   |
 
 ## JavaScript Projects
 
