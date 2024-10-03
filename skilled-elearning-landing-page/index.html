@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Skilled e-learning landing page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="font-sans overflow-x-hidden">
+    <header class="py-6 bg-white">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <img src="./assets/logo-dark.svg" alt="Skilled" />
+          <button
+            class="w-[140px] h-12 lg:w-[167px] lg:h-14 bg-purple text-white rounded-full"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+    </header>
+    <section
+      class="container flex flex-col md:flex-row justify-between items-center py-28 bg-white"
+    >
+      <div
+        class="flex flex-col w-full md:max-w-[400px] lg:max-w-[460px] md:pr-40"
+      >
+        <h1 class="text-4xl font-extrabold text-left text-purple mb-6">
+          Maximize skill, minimize budget
+        </h1>
+        <p class="text-left text-gray-600 mb-8">
+          Our modern courses across a range of in-demand skills will give you
+          the knowledge you need to live the life you want.
+        </p>
+        <button
+          class="w-[140px] h-12 lg:w-[167px] lg:h-14 bg-gradient-to-r from-pink-500 to-orange-500 text-white font-bold rounded-full hover:opacity-80 transition-opacity duration-300 self-start"
+        >
+          Get Started
+        </button>
+      </div>
+
+      <picture
+        class="md:absolute lg:-right-[390px] lg:-top-[130px] md:-top-[168px] md:-right-[424px]"
+      >
+        <source
+          media="(max-width: 375px)"
+          srcset="./assets/image-hero-mobile.webp"
+        />
+        <source
+          media="(max-width: 768px)"
+          srcset="./assets/image-hero-tablet.webp"
+        />
+        <img src="./assets/image-hero-desktop.webp" alt="Hero" />
+      </picture>
+    </section>
+    <section class="mt-52 py-16 bg-gradient-to-b from-white to-[#F0F1FF]">
+      <div
+        class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+      >
+        <div
+          class="px-8 py-16 bg-gradient-to-r from-orange-500 to-pink-500 rounded-lg"
+        >
+          <p class="text-white text-2xl font-bold">
+            Check out our most popular courses!
+          </p>
+        </div>
+        <div class="px-8 py-16 bg-white rounded-lg shadow-lg relative">
+          <img
+            src="./assets/icon-animation.svg"
+            alt="animation"
+            class="absolute left-8 top-0 -translate-y-1/2"
+          />
+          <h2 class="text-xl font-bold mb-4">Animation</h2>
+          <p class="mb-6">
+            Learn the latest animation techniques to create stunning motion
+            design and captivate your audience.
+          </p>
+          <a href="#" class="text-pink-500 font-bold">Get Started</a>
+        </div>
+        <div class="px-8 py-16 bg-white rounded-lg shadow-lg relative">
+          <img
+            src="./assets/icon-design.svg"
+            alt="design"
+            class="absolute left-8 top-0 -translate-y-1/2"
+          />
+          <h2 class="text-xl font-bold mb-4">Design</h2>
+          <p class="mb-6">
+            Create beautiful, usable interfaces to help shape the future of how
+            the web looks.
+          </p>
+          <a href="#" class="text-pink-500 font-bold">Get Started</a>
+        </div>
+        <div class="px-8 py-16 bg-white rounded-lg shadow-lg relative">
+          <img
+            src="./assets/icon-photography.svg"
+            alt="Photography"
+            class="absolute left-8 top-0 -translate-y-1/2"
+          />
+          <h2 class="text-xl font-bold mb-4">Photography</h2>
+          <p class="mb-6">
+            Explore critical fundamentals like lighting, composition, and focus
+            to capture exceptional photos.
+          </p>
+          <a href="#" class="text-pink-500 font-bold">Get Started</a>
+        </div>
+        <div class="px-8 py-16 bg-white rounded-lg shadow-lg relative">
+          <img
+            src="./assets/icon-crypto.svg"
+            alt="crypto"
+            class="absolute left-8 top-0 -translate-y-1/2"
+          />
+          <h2 class="text-xl font-bold mb-4">Crypto</h2>
+          <p class="mb-6">
+            All you need to know to get started investing in crypto. Go from
+            beginner to advanced with this 54 hour course.
+          </p>
+          <a href="#" class="text-pink-500 font-bold">Get Started</a>
+        </div>
+        <div class="px-8 py-16 bg-white rounded-lg shadow-lg relative">
+          <img
+            src="./assets/icon-business.svg"
+            alt="business"
+            class="absolute left-8 top-0 -translate-y-1/2"
+          />
+          <h2 class="text-xl font-bold mb-4">Business</h2>
+          <p class="mb-6">
+            A step-by-step playbook to help you start, scale, and sustain your
+            business without outside investment.
+          </p>
+          <a href="#" class="text-pink-500 font-bold">Get Started</a>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#13183F]">
+      <div class="container py-8">
+        <div class="flex justify-between items-center">
+          <img src="./assets/logo-light.svg" alt="Skilled" />
+          <button
+            class="w-[140px] h-12 lg:w-[167px] lg:h-14 bg-gradient-to-b from-[#4851FF] to-[#F02AA6] text-white rounded-full hover:opacity-50 transition-opacity duration-300"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
