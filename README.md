@@ -19,6 +19,7 @@ This repository contains a collection of frontend projects implemented using HTM
 | 11  | Workit Landing Page             | [Code](https://github.com/khaled308/frontend-projects/tree/main/workit-landing-page)                        | [Preview](https://khaled308-workit-landing-page.netlify.app/)                   |
 | 12  | Skilled E-learning Landing page | [Code](https://github.com/khaled308/frontend-projects/tree/main/skilled-elearning-landing-page)             | [Preview](https://khaled308-skilled-elearning.netlify.app/)                     |
 | 13  | equalizer landing page          | [Code](https://github.com/khaled308/frontend-projects/tree/main/equalizer-landing-page)                     | [Preview](https://khaled308-equalizer-landing-page.netlify.app/)                |
+| 14  | grid landing page               | [Code](https://github.com/khaled308/frontend-projects/tree/main/bento-grid)                                 | [Preview](https://bento-grid-khaled308.netlify.app/)                            |
 
 ## JavaScript Projects
 
