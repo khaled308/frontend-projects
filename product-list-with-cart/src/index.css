@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Red-Hat-Text";
+  src: url("./assets/fonts/RedHatText-VariableFont_wght.ttf") format("truetype");
+}
+
+@theme {
+  --font-sans: "Red-Hat-Text", sans-serif;
+  --color-red: #c73b0f;
+  --color-rose-900: #260f08;
+  --color-rose-500: #87635a;
+  --color-rose-400: #ad8a85;
+  --color-rose-300: #caafa7;
+  --color-rose-100: #f5eeec;
+  --color-rose-50: #fcf8f6;
+  --color-green: #1ea575;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --text-sm: 0.875rem;
+  --text--sm-line-height: 150%;
+  --text-base: 1rem;
+  --text-base-line-height: 150%;
+  --text-lg: 1.5rem;
+  --text-lg-line-height: 125%;
+  --text-xl: 2.5rem;
+  --text-xl-line-height: 120%;
+}
+
+@keyframes fadeSlideUpIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUpOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}
+
+.animate-fadeSlideUp {
+  animation: fadeSlideUpIn 0.6s ease-out forwards;
+}
+
+.animate-fadeSlideDown {
+  animation: fadeSlideUpOut 0.6s ease-in forwards;
+}

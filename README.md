@@ -29,9 +29,10 @@ This repository contains a collection of frontend projects implemented using HTM
 
 ## React JS Projects
 
-| #   | Project Name | Code                                                                          | Live Preview                                          |
-| --- | ------------ | ----------------------------------------------------------------------------- | ----------------------------------------------------- |
-| 1   | Country Quiz | [Code](https://github.com/khaled308/frontend-projects/tree/main/country-quiz) | [Preview](https://joyful-pudding-3c52a9.netlify.app/) |
+| #   | Project Name           | Code                                                                                    | Live Preview                                                     |
+| --- | ---------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| 1   | Country Quiz           | [Code](https://github.com/khaled308/frontend-projects/tree/main/country-quiz)           | [Preview](https://joyful-pudding-3c52a9.netlify.app/)            |
+| 2   | Product List with Cart | [Code](https://github.com/khaled308/frontend-projects/tree/main/product-list-with-cart) | [Preview](https://product-list-with-cart-khaled308.netlify.app/) |
 
 ## About
 
